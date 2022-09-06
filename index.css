@@ -14034,6 +14034,12 @@ div.g-recaptcha {
   }
 }
 
+@media screen and (min-width: 1439px) {
+  .recommend-button {
+    width: 100%;
+  }
+}
+
 .referal-partners-block {
   display: flex;
   flex-direction: column;
