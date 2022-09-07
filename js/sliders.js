@@ -440,6 +440,42 @@ var animLength = 400;
       })
     }
 
+    if ($('.js-partner-carousel').length) {
+      $('.js-partner-carousel').each(function () {
+        $(this).slick(Object.assign(settings.basic, {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: DESKTOP,
+              settings: Object.assign(settings.variable, {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              })
+            },
+            {
+              breakpoint: TABLET,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+              }
+            },
+            {
+              breakpoint: PHONE,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+              }
+            }
+          ]
+        }));
+      })
+    }
+
 
     function setCompareHeight() {
       setTimeout(function () {
