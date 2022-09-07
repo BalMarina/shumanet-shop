@@ -14114,6 +14114,10 @@ div.g-recaptcha {
     line-height: 18px;
   }
 
+  .products-recommend-button {
+    max-height: 60px;
+  }
+
   .recommend__header_active {
     margin-left: 50px;
   }
@@ -14258,6 +14262,22 @@ div.g-recaptcha {
 
   .referal-form__item-image_hidden {
     display: none;
+  }
+
+  .products-recommend-button {
+    background: #E0F5FF url(./images/icons/document.png) top 50% left 25px no-repeat;
+    max-height: 70px;
+  }
+
+  .products-recommend-button_header {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .products-recommend-button_active {
+    background: #1465C8 url(./images/icons/close.png) no-repeat left 25px center;
+    color: #fff;
   }
 }
 
