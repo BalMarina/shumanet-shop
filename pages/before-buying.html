@@ -690,27 +690,28 @@
 
         <div class="buying-grid__item buying-grid__item_one">
           <a class="buying-grid__item-content" href="#">
-            <div style="display: flex; flex-direction: column;">
+            <div class="flex-column">
               <h2 class="catalog-chapters__item-head head_18">Нужна ли вам звукоизоляция?</h2>
-              <div class="catalog-chapters__item-descr">Рассказываем, о том, как определить что нужно шумоизолировать и
+              <div class="catalog-chapters__item-descr bb__item-descr">Рассказываем, о том, как определить что нужно
+                шумоизолировать и
                 в
                 каких случаях.
               </div>
             </div>
-            <img src="../images/Frame 7899.png" alt="" class="buying-grid__item-image_hidden">
           </a>
         </div>
 
         <div class="buying-grid__item buying-grid__item_two">
           <a class="buying-grid__item-content" href="#">
-            <div style="display: flex; flex-direction: column;">
-              <h2 class="catalog-chapters__item-head head_18">На каком этапе ремонта делать шумоизоляцию?</h2>
-              <div class="catalog-chapters__item-descr">Рассказываем об очередности работ по звукоизоляции и других
+            <h2 class="catalog-chapters__item-head head_18">На каком этапе ремонта делать шумоизоляцию?</h2>
+            <div class="flex-item">
+              <div class="catalog-chapters__item-descr bb__item-descr">Рассказываем об очередности работ по
+                звукоизоляции и других
                 правилах.
               </div>
+              <img src="../images/icons/before-buy-2.png" alt=""
+                class="buying-grid__item-icon buying-grid__item-image_hidden buying-grid__item-icon_flex">
             </div>
-            <img src="../images/icons/before-buy-2.png" alt=""
-              class="buying-grid__item-icon buying-grid__item-image_hidden">
           </a>
         </div>
 
@@ -745,11 +746,13 @@
 
         <div class="buying-grid__item buying-grid__item_seven">
           <a class="buying-grid__item-content" href="#">
-            <div style="display: flex; flex-direction: column;">
-              <h2 class="catalog-chapters__item-head head_18">Каркасная и бескаркасная звукоизоляция</h2>
-              <div class="catalog-chapters__item-descr">Подробно расскажем о разнице между материалов.</div>
+            <h2 class="catalog-chapters__item-head head_18">Каркасная и бескаркасная звукоизоляция</h2>
+            <div class="flex-item">
+              <div class="catalog-chapters__item-descr">Подробно расскажем о разнице между материалах.
+              </div>
+              <img src="../images/icons/before-buy-7.png" alt=""
+                class="buying-grid__item-icon buying-grid__item-icon_flex">
             </div>
-            <img src="../images/icons/before-buy-7.png" alt="" class="buying-grid__item-icon">
           </a>
         </div>
 
@@ -770,7 +773,7 @@
       </div>
 
       <div class="buying-track">
-        <h2 class="head_18" style="margin: 25px;"><a href="#">Как покупать в нашем магазине?</a></h2>
+        <h2 class="head_18 mar25"><a href="#">Как покупать в нашем магазине?</a></h2>
         <a class="header-logo logo_hidden" href="/"><img src="../images/logo_small.png" alt="">
           <div class="header-logo__name">Shumanet-shop.ru</div>
           <div class="header-logo__desc">Магазин акустических материалов</div>
@@ -784,21 +787,21 @@
 
           <ul class="form-list">
             <div class="buying-form__row">
-              <li class="buying-form__row-item" style="position: relative; margin-bottom: 10px;">
+              <li class="buying-form__row-item l-relative mb10">
                 <input type="text" placeholder="ФИО" value="Олегов Олег Олегович" class="dirty">
-                <div class="note" style="padding-top:0px;">ФИО</div>
+                <div class="note pt0">ФИО</div>
               </li>
-              <li class="buying-form__row-item" style="position: relative;  margin-bottom: 10px;">
+              <li class="buying-form__row-item l-relative mb10">
                 <input type="text" placeholder="Телефон" value="+7 (925) 345-34-77" class="dirty">
-                <div class="note" style="padding-top:0px;">Телефон</div>
+                <div class="note pt0">Телефон</div>
               </li>
             </div>
-            <li class="buying-form__row_width" style="padding-left: 0; margin: 0; position: relative;">
+            <li class="buying-form__row_width l-relative pl0 mar0">
               <input type="text" name="user_comment" value="Я хочу узнать..." placeholder="Комментарий"
                 style="padding-bottom: 70px;" class="dirty">
-              <div class="note" style="padding-top:0px;">Комментарий</div>
+              <div class="note pt0">Комментарий</div>
             </li>
-            <li class="buying-form__row_width" style="padding-left: 0; margin: 0;">
+            <li class="buying-form__row_width pl0 mar0">
               <div class="feedback-uploader">
                 <label>
                   Прикрепить файл
@@ -807,12 +810,12 @@
                 <div class="feedback-uploader__icon"></div>
               </div>
             </li>
-            <li class="buying-form__row_width" style="display: flex; margin: 0; padding-left: 0;">
+            <li class="buying-form__row_width pl0 mar0 flex-item">
               <div class="user-agreement-block user-agreement-block--captcha">
                 <label class="user-agreement">
                   <div class="checkboxArea checkboxAreaChecked"></div>
                   <input type="checkbox" name="REGISTER[UF_SUBSCRIBE]" value="Да" checked="" class="outtaHere">
-                  <span> Даю своё согласие на обработку <a href="#" style="color: #1465C8;">персональных
+                  <span> Даю своё согласие на обработку <a href="#" class="blue-link">персональных
                       данных</a></span>
                 </label>
               </div>
@@ -821,7 +824,7 @@
 
           <input class="button button-blue" type="submit" name="submit" value="Отправить">
         </form>
-        <img src="../images/Frame 7902.png" class="contact-form__image" style="position: relative;">
+        <img src="../images/Frame 7902.png" class="contact-form__image l-relative">
       </div>
 
     </div>

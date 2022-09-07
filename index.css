@@ -13194,7 +13194,7 @@ div.g-recaptcha {
   text-align: left;
   font-size: 18px;
   font-weight: 700;
-  margin: 25px auto 25px 25px;
+  margin: 25px auto 5px 25px;
   line-height: 25px;
 }
 
@@ -13348,6 +13348,10 @@ div.g-recaptcha {
     max-height: 226px;
     max-width: 192px;
   }
+
+  .catalog-chapters__item-descr {
+    width: 65%;
+  }
 }
 
 /* Styles for page "Before buying" */
@@ -13368,11 +13372,16 @@ div.g-recaptcha {
   width: 100%;
   height: 180px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .buying-grid__item-icon {
   margin: auto 25px 25px auto;
+}
+
+.buying-grid__item-icon_flex {
+  padding-top: 50px;
 }
 
 .buying-grid__item_one {
@@ -13504,6 +13513,10 @@ div.g-recaptcha {
   line-height: 40px;
 }
 
+.bb__item-descr {
+  max-width: 400px;
+}
+
 @media screen and (max-width: 767px) {
   .buying-grid {
     grid-template-columns: 1fr;
@@ -13544,6 +13557,21 @@ div.g-recaptcha {
     font-size: 20px;
     line-height: 25px;
   }
+
+  .buying-grid__item-content {
+    max-height: 130px;
+    justify-content: flex-start;
+  }
+
+  .buying-grid__item-icon {
+    max-width: 35px;
+    max-height: 35px;
+    margin: auto 20px 20px auto;
+  }
+
+  .buying-grid__item-icon_flex {
+    padding-top: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -13568,11 +13596,27 @@ div.g-recaptcha {
   .buying-form-wrapper {
     width: 100%;
   }
+
+  .buying-grid__item-icon_flex {
+    padding-top: 20px;
+  }
+
+  .buying-grid__item-content {
+    justify-content: flex-start;
+  }
+
+  .buying-grid__item_one {
+    background: #F6F9FA url(./images/Frame\ 7899.png) top 30px right no-repeat;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .buying-form-wrapper_photo-container {
     width: 50%;
+  }
+
+  .buying-grid__item_one {
+    background: #F6F9FA url(./images/Frame\ 7899.png) top 17px right no-repeat;
   }
 }
 
@@ -14455,11 +14499,23 @@ div.g-recaptcha {
 }
 
 .pt0 {
-  padding-top: 0px;
+  padding-top: 0px !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
 }
 
 .pl10 {
-  padding-left: 10px;
+  padding-left: 10px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.mar0 {
+  margin: 0 !important;
 }
 
 .referal-form__item-image-girl {
@@ -14673,15 +14729,19 @@ body,
 }
 
 .mar-auto {
-  margin: auto;
+  margin: auto !important;
+}
+
+.mar25 {
+  margin: 25px !important;
 }
 
 .pt5 {
-  padding-top: 5px;
+  padding-top: 5px !important;
 }
 
 .ml0 {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 
 .half-opacity {
