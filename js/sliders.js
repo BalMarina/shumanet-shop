@@ -457,9 +457,11 @@ var animLength = 400;
               breakpoint: TABLET,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
+                slidesToScroll: 2,
                 arrows: false,
                 dots: true,
+                infinite: false,
+
               }
             },
             {
