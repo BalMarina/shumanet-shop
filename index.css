@@ -14291,6 +14291,10 @@ div.g-recaptcha {
     margin-left: 50px;
   }
 
+  .products-recommend-button_header {
+    margin-bottom: 0px;
+  }
+
   .recommend-shortlist {
     flex-direction: column;
   }
@@ -14459,6 +14463,11 @@ div.g-recaptcha {
 
   .recommend__header_active {
     margin-left: 40px;
+  }
+
+  .products-recommend-button_header {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -14808,10 +14817,6 @@ div.g-recaptcha {
   .article-form-head {
     font-size: 20px;
     line-height: 25px;
-  }
-
-  .buying-form__row_width {
-    padding-bottom: 0;
   }
 
   .article-text__ul:last-child {
