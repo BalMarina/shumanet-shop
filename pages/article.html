@@ -681,39 +681,42 @@
       <div class="breadcrumbs">
         <ul class="l-horizontal">
           <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Звукоизоляция</a></li>
+          <li><a href="#">Перед покупкой</a></li>
+          <li><a href="#">Нужна ли вам шумоизоляция</a></li>
         </ul>
       </div>
       <h1>Нужна ли вам шумоизоляция</h1>
       <div class="left-column left-column_width left-column_sticky">
-        <div class="recommend recommend-button article-content-button lightblue-rounded">
-          <h3 class="recommend__header recommend__header_active recommend-button__header">Содержание</h3>
-          <ul class="recommend-list recommend-list_hidden">
-            <li class="recommend-list-item article-recommend-list-item">
-              <div class="recommend-list-inner"><a href="#section1"
-                  class="recommend-list-item-desc desc_active">Ситуации, в
-                  которых возникает необходимость звукоизоляции</a>
-              </div>
-            </li>
-            <li class="recommend-list-item article-recommend-list-item">
-              <div class="recommend-list-inner"><a href="#section2" class="recommend-list-item-desc">Как шум попадает в
-                  комнату/квартиру</a>
-              </div>
-            </li>
-            <li class="recommend-list-item article-recommend-list-item">
-              <div class="recommend-list-inner"><a href="#section3" class="recommend-list-item-desc">Нужно ли делать
-                  полную ЗВИ
-                  комнаты</a>
-              </div>
-            </li>
-            <li class="recommend-list-item article-recommend-list-item">
-              <div class="recommend-list-inner"><a href="#section4" class="recommend-list-item-desc">Как понять, что
-                  нужно
-                  шумоизолировать </a>
-              </div>
-            </li>
-          </ul>
+        <div class="recommend recommend-button article-recommend-button lightblue-rounded">
+          <div class="article-content-button">
+            <h3 class="recommend__header recommend__header_active recommend-button__header head_mb">Содержание</h3>
+            <ul class="recommend-list recommend-list_hidden">
+              <li class="recommend-list-item article-recommend-list-item">
+                <div class="recommend-list-inner"><a href="#section1"
+                    class="recommend-list-item-desc desc_active">Ситуации, в
+                    которых возникает необходимость звукоизоляции</a>
+                </div>
+              </li>
+              <li class="recommend-list-item article-recommend-list-item">
+                <div class="recommend-list-inner"><a href="#section2" class="recommend-list-item-desc">Как шум попадает
+                    в
+                    комнату/квартиру</a>
+                </div>
+              </li>
+              <li class="recommend-list-item article-recommend-list-item">
+                <div class="recommend-list-inner"><a href="#section3" class="recommend-list-item-desc">Нужно ли делать
+                    полную ЗВИ
+                    комнаты</a>
+                </div>
+              </li>
+              <li class="recommend-list-item article-recommend-list-item">
+                <div class="recommend-list-inner"><a href="#section4" class="recommend-list-item-desc">Как понять, что
+                    нужно
+                    шумоизолировать </a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -723,10 +726,10 @@
           </h4>
           <img class="article-text__img" src="../images/article1.png" width="730" alt="article1" />
           <div class="article-text__block mb-60">
-            <div class="mb-20">
+            <div class="mb15">
               Важно определиться с основной задачей шумоизоляции жилья.
             </div>
-            <div class="mb-20">
+            <div class="mb15">
               Типовыми задачами могут быть:
             </div>
             <ul class="article-text__ul">
@@ -824,24 +827,24 @@
                     <label class="user-agreement">
                       <div class="checkboxArea checkboxAreaChecked"></div>
                       <input type="checkbox" name="REGISTER[UF_SUBSCRIBE]" value="Да" checked="" class="outtaHere">
-                      <span> Даю своё согласие на обработку <a href="#" class="blue-link">персональных
+                      <span> Даю своё согласие на обработку<br><a href="#" class="blue-link">персональных
                           данных</a></span>
                     </label>
                   </div>
                 </li>
               </ul>
 
-              <input class="button button-blue" type="submit" name="submit" value="Отправить">
+              <input class="button button-blue button-blue_width" type="submit" name="submit" value="Отправить">
             </form>
             <img src="../images/Frame 7902.png" class="contact-form__image_article">
           </div>
           <div class="carousel carousel-v2">
             <div class="carousel-flex-container">
-              <h2 class="carousel-header">Материалы из статьи</h2>
+              <h2 class="carousel-header carousel-header-desc">Материалы из статьи</h2>
               <a href="#"><span class="blue-link">Перейти в каталог</span> &#10140;</a>
             </div>
             <div class="l-clr"></div>
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper carousel-wrapper-mt-15">
               <div class="js-carousel">
                 <div>
                   <div class="catalog-item catalog-item_carousel">
@@ -1172,6 +1175,7 @@
 
     const recommendButton = document.querySelector('.recommend-button');
     recommendButton.addEventListener('click', function () {
+      recommendButton.querySelector('.article-content-button').classList.toggle('article-content-button_active')
       recommendButton.querySelector('.recommend-list').classList.toggle('recommend-list_hidden')
       recommendButton.querySelector('.recommend__header').classList.toggle('recommend__header_active')
     })
