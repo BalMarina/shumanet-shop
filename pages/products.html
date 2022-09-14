@@ -718,13 +718,13 @@
           </ul>
         </div>
         <div class="recommend-shortlist recommend-list_hidden">
-          <a href="#">Звукоизоляция квартиры</a>
-          <a href="#">Звукоизоляция стен в квартире</a>
+          <a href="#"><span class="recommend-shortlist__icon"></span>Звукоизоляция квартиры</a>
+          <a href="#"><span class="recommend-shortlist__icon"></span>Звукоизоляция стен в квартире</a>
         </div>
       </div>
       <div class="catalog-center-under-bottom">
         <div class="catalog-wrapper">
-          <div class="catalog l-grid l-grid-phone catalog_p20">
+          <div class="l-grid l-grid-phone catalog_p20">
 
             <div class="catalog-item-wrapper catalog-item_width">
               <div class="catalog-item catalog-item_grid catalog-item_height">
@@ -995,13 +995,15 @@
   <script type="text/javascript">
     document.querySelectorAll('.recommend.products-recommend-button').forEach((el) => {
       el.addEventListener('click', function (e) {
-        const btn = e.currentTarget;
-        btn.classList.toggle('products-recommend-button_active')
-        const listEl = btn.parentElement.querySelector('.recommend-shortlist')
-        if (btn.classList.contains('products-recommend-button_active')) {
-          listEl.style.display = 'block'
-        } else {
-          listEl.style.display = 'none'
+        if (window.innerWidth < 1440) {
+          const btn = e.currentTarget;
+          btn.classList.toggle('products-recommend-button_active')
+          const listEl = btn.parentElement.querySelector('.recommend-shortlist')
+          if (btn.classList.contains('products-recommend-button_active')) {
+            listEl.style.display = 'block'
+          } else {
+            listEl.style.display = 'none'
+          }
         }
       })
     });
